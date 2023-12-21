@@ -1,0 +1,1 @@
+export const Message = () => <p>What a beatufil day!</p>;
