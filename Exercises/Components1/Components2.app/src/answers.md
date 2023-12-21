@@ -1,0 +1,3 @@
+// 1- I surely can use the Hello component more than once in the app. The result is the repetition of the component's content in the app (look at App.jsx);
+// 2- If "rendering directly within a component" means to import and include the component inside the other one it is surely possible but I'm not able to
+//    render a component without importing it and I must use createRoot and the .root method just one time in the React Application, referring to the rootObject.
