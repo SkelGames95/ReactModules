@@ -7,4 +7,5 @@ export const Welcome = ({name, age}) => {
 
 
 
-Welcome.defaultProps = {name: "guest"};
+Welcome.defaultProps = {name: "guest", age: "undefined"};
+
