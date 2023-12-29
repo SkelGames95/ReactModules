@@ -1,0 +1,2 @@
+As we can see in the App the Welcome component can be created with a default value to prevent the lack of information and display a default name in the app.
+Without any default value the App will display the message only with no names (often causing a synthax error in the displayed language).
