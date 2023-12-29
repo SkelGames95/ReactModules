@@ -1,2 +1,2 @@
 # ReactModules
-Lessons and exercises from React Modules
+Exercises from React Modules
