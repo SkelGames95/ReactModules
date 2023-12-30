@@ -6,7 +6,10 @@ export const App = () => {
     <div>
         <h1>My Awesome APP!</h1>
         <hr />
-        <Welcome name="Marco" age={28}/>
-        <Welcome name="Gessica" age={25}/>
+        <Welcome name="Marco" age={28} />
+        <Welcome name="Gessica" />
+        <Welcome />
     </div>
 )}
+
+export default App;
