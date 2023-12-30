@@ -37,7 +37,8 @@
 export const Welcome = ({name, age}) => {
     return (<div>
         <p>Welcome, <strong>{name}</strong>!</p>
-        {age && <p>Your age is: {age}.</p>}
+        {age > 18 && <p>Your age is: {age}.</p>}
+        {age < 18 && <p>You are too young to go further!</p> }
     </div>    
 )}
 
