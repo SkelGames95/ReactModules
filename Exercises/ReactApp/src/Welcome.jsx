@@ -1,9 +1,11 @@
-import { Age } from "./Age";
-
-export const Welcome = ({name}) => {
+export const Welcome = ({name, age}) => {
     return (<div>
         <p>Welcome to my App, <strong>{name}</strong>!</p>
-        <Age age={28}/>
+        {age && <p>Your age is: {age}.</p>}
+        {age > 18 && <p>You are an adult! Your age is: {age}.</p>}
+        {age >= 18 && age <= 65 && <p>Your age is between 18 and 65.</p>}
+        {age >= 18 && age <= 65 && name=="John" && <p>Your age is between 18 and 65 and your name is John.</p>}
+        {!age && <p>Your age is unknown.</p>}
     </div>
 )}
 
