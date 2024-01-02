@@ -1,4 +1,5 @@
 // import { HelloWorld } from "./HelloWorld"
+import { AlertClock } from "./AlertClock";
 import { Welcome } from "./Welcome"
 
 export const App = () => {
@@ -9,6 +10,8 @@ export const App = () => {
         <Welcome name="Marco" age={28} />
         <Welcome name="Gessica" />
         <Welcome />
+
+        <AlertClock />
     </div>
 )}
 
