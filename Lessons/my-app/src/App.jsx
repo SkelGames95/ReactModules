@@ -1,5 +1,6 @@
 // import { HelloWorld } from "./HelloWorld"
 import { AlertClock } from "./AlertClock";
+import { Counter } from "./Counter";
 import { Welcome } from "./Welcome"
 
 export const App = () => {
@@ -12,6 +13,8 @@ export const App = () => {
         <Welcome />
 
         <AlertClock />
+
+        <Counter initialValue={20}/>
     </div>
 )}
 
