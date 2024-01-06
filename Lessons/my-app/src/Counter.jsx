@@ -74,11 +74,17 @@ import { useEffect, useState } from "react"
 export const Counter = ({initialValue = 0}) => {
     const [ counter, counterUpdate ] = useState(initialValue);
 
-    // useEffect(() => {
-    //     console.log(`The value of the counter is ${counter}`);                          // passing the effect (function) as the first parameter and the value to control as the second one
-    // }, [counter, initialValue])                                                         // so every time the counter changes the app execute the function to print on console the message
-                                                                                        // I can also add another value to the dependency array to trigger the effect whenever one of them changes
-    function handleCounterIncrement () {
+    useEffect(() => {
+        console.log(`The value of the counter is ${counter}`);                          // passing the effect (function) as the first parameter and the value to control as the second one
+    
+        return () => {
+            console.log(`The value of the counter was ${counter}`);                     // cleanup function
+        }
+    
+    }, [counter, initialValue])                                                         // so every time the counter changes the app execute the function to print on console the message
+    // I can also add another value to the dependency array to trigger the effect whenever one of them changes
+    
+    function handleCounterIncrement () {                                               
         counterUpdate((c) => c + 1);
         counterUpdate((c) => c + 1);
         counterUpdate((c) => c + 1);
