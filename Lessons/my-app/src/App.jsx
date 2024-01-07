@@ -2,6 +2,7 @@
 import { AlertClock } from "./AlertClock";
 import { Clock } from "./Clock";
 import { Counter } from "./Counter";
+import { MouseClicker } from "./MouseClicker";
 import { Welcome } from "./Welcome"
 
 export const App = () => {
@@ -19,6 +20,9 @@ export const App = () => {
         <br/>
         <br/>
         <Clock />
+        <br/>
+        <br/>
+        <MouseClicker />
     </div>
 )}
 
