@@ -1,11 +1,12 @@
-import { Component } from "./Component"
+import { MouseClicker } from "./MouseClicker"
 
 
 export const App = () => {
 
     return (
         <div>
-            <Component />
+            <h2>Look at the Console!</h2>
+            <MouseClicker />
         </div>
     )
 }
