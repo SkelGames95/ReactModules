@@ -5,7 +5,7 @@ export const App = () => {
     return (
         <div>
             <h1>My Counter</h1>
-            <Counter initialValue={0} incrementAmount={1}/>
+            <Counter initialValue={0} UpdateAmount={1}/>
         </div>
     )
 }
