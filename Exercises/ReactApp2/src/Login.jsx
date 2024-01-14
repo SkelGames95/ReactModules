@@ -1,4 +1,7 @@
 import { useState } from "react"
+import { Username } from "./Username"
+import { Password } from "./Password"
+import { RememberMe } from "./RememberMe"
 
 export const Login = () => {
     const [data, setData] = useState({
@@ -24,11 +27,14 @@ export const Login = () => {
 
     return (
         <div>
-            <input name="username" value={data.username} onChange={handleInputChange} placeholder="Username"/>
-            <input name="password" type="password" value={data.password} onChange={handleInputChange} placeholder="Password"/>
+            <Username value={data.username} onChange={handleInputChange} />
+            <Password value={data.password} onChange={handleInputChange} />
             <br/>
             <br/>
-            <label><input name="session" type="checkbox" checked={data.session} onChange={handleInputChange}/>Remember me</label>
+            <RememberMe checked={data.session} onChange={handleInputChange} />
+            <pre>
+                {JSON.stringify(data, null, 2)}
+            </pre>
         </div>
     )
 }

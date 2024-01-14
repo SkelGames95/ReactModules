@@ -1,0 +1,1 @@
+export const Password = ({value, onChange}) => <input name="password" type="password" value={value} onChange={onChange} placeholder="Password"/>
