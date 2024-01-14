@@ -1,0 +1,1 @@
+export const RememberMe = ({checked, onChange}) => <label><input name="session" type="checkbox" checked={checked} onChange={onChange}/>Remember me</label>
