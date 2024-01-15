@@ -1,0 +1,1 @@
+export const Username = ({value, onChange}) => <input name="username" value={value} onChange={onChange} placeholder="Username"/>
