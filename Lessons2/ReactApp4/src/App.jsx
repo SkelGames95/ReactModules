@@ -5,7 +5,7 @@ import { Form } from "./RefsExample"
 export const App = () => {
 
     return (
-        <div>
+        <div className="app">                       {/* adding className to apply style from css */}
             <h1>My Form</h1>
             <Form />
             <br/>

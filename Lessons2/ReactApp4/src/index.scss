@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    padding: 30px;
+    padding-left: 50px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: aquamarine;
+
+    h1 {
+        color: blue;               // grazie a sass stiamo attribuendo a ogni h1 della classe app un colore specifico
+    }
+}
