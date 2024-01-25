@@ -1,7 +1,7 @@
 // Going to create a component with counter applying hooks for the firts time, specifically using the useState hook
 
 import { useEffect, useState } from "react"
-import classes from './counter.module.scss'
+import classes from './Counter.module.scss'                     // LOOK AT THE STYLE!
 
 // export const Counter = () => {
 //     const [ counter, counterUpdate ] = useState(10);        // using the destructuring to assign variables to useState values
@@ -102,13 +102,13 @@ export const Counter = ({initialValue = 0}) => {
     return (
         <div>
             <p>I have counted to {counter}</p>
-            <button className={classes.button} onClick={handleCounterIncrement}>Increment</button>
+            <button className={classes.button} onClick={handleCounterIncrement}>Increment</button>                                                  {/* Applying style class */}
             <br/>
             <br/>
-            <button className={classes.button} onClick={handleCounterDecrement}>Decrement</button>
+            <button className={counter % 2 === 0 ? classes.evenBg : classes.oddBg} onClick={handleCounterDecrement}>Decrement</button>              {/* Applying style classes with conditions */}
             <br/>
             <br/>
-            <button className={classes.button} onClick={handleResetCounter}>Reset</button>
+            <button className={counter % 2 === 0 ? classes.evenBg : classes.oddBg} onClick={handleResetCounter}>Reset</button>
         </div>
     )
 }

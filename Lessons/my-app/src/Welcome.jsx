@@ -56,10 +56,35 @@ in this case, if age is true = render the paragraph "your age is" */
 
 // Conditional Rendering with Ternary Operator "?" in "Welcome"
 
+// export const Welcome = ({name, age}) => {
+
+//     const WelcomeStyle = {                                                      // Applying style
+//         backgroundColor: 'greenyellow',
+//         color: '#333'
+//     }
+
+//     return (
+//         <div style={WelcomeStyle}>
+//             {name ? <p>Welcome, <strong>{name}</strong>!</p> : <HelloWorld />}
+//             {age > 18 && <p>Your age is: {age}.</p>}
+//             {age < 18 && <p>You are too young to go further!</p> }
+//         </div>    
+// )}
+
+
+
+// We can do apply style directly inside the prop having the same result but a less readble content
+
+
 export const Welcome = ({name, age}) => {
-    return (<div>
-        {name ? <p>Welcome, <strong>{name}</strong>!</p> : <HelloWorld />}
-        {age > 18 && <p>Your age is: {age}.</p>}
-        {age < 18 && <p>You are too young to go further!</p> }
-    </div>    
+
+    return (
+        <div style={{                                                       // Applying style directly inside the prop
+            backgroundColor: name ? 'greenyellow' : 'darkgray',             // We can also use ternary operator to st up conditions and change styles
+            color: name ? '#333' : '#fff'
+        }}>
+            {name ? <p>Welcome, <strong>{name}</strong>!</p> : <HelloWorld />}
+            {age > 18 && <p>Your age is: {age}.</p>}
+            {age < 18 && <p>You are too young to go further!</p> }
+        </div>    
 )}

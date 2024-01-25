@@ -1,4 +1,14 @@
 .button {
     padding: 5px 10px;
-    background-color: aqua;
+    background-color: rgb(255, 115, 0);
+}
+
+.evenBg {
+    padding: 5px 10px;
+    background-color: rgba(255, 0, 64, 0.952);
+}
+
+.oddBg {
+    padding: 5px 10px;
+    background-color: rgb(62, 164, 233);
 }
