@@ -3,6 +3,18 @@
     background-color: lightgreen;
     margin: 20px;
     padding: 40px;
+
+    h1 {
+        color: brown;
+    }
+}
+
+.app-content-collapsed {
+    border: 4px solid burlywood;
+    background-color: lightgreen;
+    margin: 20px;
+    padding: 40px;
+    visibility: collapse;
 }
 
 .app-title {
