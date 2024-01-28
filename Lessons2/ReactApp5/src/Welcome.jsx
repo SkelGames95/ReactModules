@@ -80,7 +80,7 @@ export const Welcome = ({name, age}) => {
 
     return (
         <div style={{                                                       // Applying style directly inside the prop
-            backgroundColor: name ? 'greenyellow' : 'darkgray',             // We can also use ternary operator to st up conditions and change styles
+            backgroundColor: name ? 'azure' : 'darkgray',             // We can also use ternary operator to st up conditions and change styles
             color: name ? '#333' : '#fff'
         }}>
             {name ? <p>Welcome, <strong>{name}</strong>!</p> : <HelloWorld />}
