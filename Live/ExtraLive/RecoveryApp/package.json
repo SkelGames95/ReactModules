@@ -1,9 +1,5 @@
 {
-<<<<<<<< HEAD:Lessons2/ReactApp2/package.json
-  "name": "reactapp2",
-========
-  "name": "liveapp",
->>>>>>>> cb096bf3162a8dc417a64f70b6bdcafb244f89e8:Live/ex1/LiveApp/package.json
+  "name": "recoveryapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
