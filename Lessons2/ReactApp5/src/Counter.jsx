@@ -72,7 +72,7 @@ import classes from './Counter.module.scss'                     // LOOK AT THE S
 
 // Adding useEffect hook to the counter:
 
-export const Counter = ({initialValue = 0}) => {
+export const Counter = ({ initialValue }) => {
     const [ counter, counterUpdate ] = useState(initialValue);
 
     useEffect(() => {
