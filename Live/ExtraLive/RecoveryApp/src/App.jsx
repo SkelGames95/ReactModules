@@ -1,10 +1,10 @@
-import { Cards } from "./FetchData"
+import { FetchData } from "./FetchData"
 
 export const App = () => {
 
     return (
         <div>
-            <Cards />
+            <FetchData />
         </div>
     )
 }

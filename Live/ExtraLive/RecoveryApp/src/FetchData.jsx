@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { Card } from "./Card30-01"
 import './Esercitazione30-01.css'
 
-export function Cards() {
+export function FetchData() {
 
     const [data, setData] = useState([])
 
