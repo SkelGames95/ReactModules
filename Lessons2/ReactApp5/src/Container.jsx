@@ -56,7 +56,7 @@ import { useState } from "react";
 
 export const Container = ({ title, children }) => {
 
-    const [collapsed, setCollapsed] = useState(true);
+    const [collapsed, setCollapsed] = useState(false);
 
     const handleToggleCollapse = () => {
         setCollapsed(t => !t)

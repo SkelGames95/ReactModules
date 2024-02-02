@@ -7,6 +7,7 @@ import { ListOfObjects } from "./ListOfObjects";        // created an array of o
 import { Container } from "./Container";                // created a container to show how to use Containers and give them some specific conditions
 import { LanguageContext } from "./LanguageContext";
 import { useState } from "react";
+import { GithubUser } from "./GithubUser";
 
 export const App = () => {
     const [language, setLanguage] = useState('en')      // creating a useState initialyzing it to 'en'.
@@ -28,6 +29,7 @@ export const App = () => {
                     <Welcome name="Marco" age={28} />
                     <Welcome name="Gessica" />
                     <Welcome />
+                    <GithubUser username='SkelGames95'/>
 
                     <AlertClock />
 
