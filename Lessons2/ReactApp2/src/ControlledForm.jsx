@@ -173,30 +173,34 @@ const createData = () => {
         password: '',
         session: false,
         //other parameters
-    }
-}
+    };
+};
 
 export const Form = () => {
-    const [data, setData] = useState(createData)
+    const [data, setData] = useState(createData());
+    const [isLoginClicked, setIsLoginClicked] = useState(false); // State to track if login button is clicked
 
     const handleInputChange = (event) => {
-        const name = event.target.name
-        const value = event.target.value
-        const checked = event.target.checked
-        const type = event.target.type
+        const name = event.target.name;
+        const value = event.target.value;
+        const checked = event.target.checked;
+        const type = event.target.type;
     
         setData(currdata => {
             return {
                 ...currdata,
                 [name]: type === 'checkbox' ? checked : value,
-
-            }
-        })       
-    }
+            };
+        });       
+    };
 
     const handleResetForm = () => {
-        setData(createData)
-    }
+        setData(createData());
+    };
+
+    const handleLogin = () => {
+        setIsLoginClicked(true); // Set login button clicked to true
+    };
 
     return (
         <div>
@@ -208,11 +212,14 @@ export const Form = () => {
             <label><input name="session" type="checkbox" checked={data.session} onChange={handleInputChange}/>Remember me</label>
             <br/>
             <br/>
-            <button disabled={!data.username || !data.password}>Login</button>
+            <button onClick={handleLogin} disabled={!data.username || !data.password}>Login</button>
 
-            <pre>
-                {JSON.stringify(data, null, 2)}
-            </pre>
+            {/* Render information only when login button is clicked */}
+            {isLoginClicked && (
+                <pre>
+                    {JSON.stringify(data, null, 2)}
+                </pre>
+            )}
         </div>
-    )
-}
+    );
+};
